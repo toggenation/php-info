@@ -52,6 +52,24 @@ In template:
 
 
 ## Installation
+This package is not published on https://packagist.org/
+
+You need to add to add the following `repositories` property to your `composer.json` and run `composer update`.
+
+Or just add the `repositories` section and run composer require `toggenation/php-info:dev-master`
+
+```json
+  "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/toggenation/php-info"
+        }
+    ],
+    "require": {
+         "toggenation/php-info": "dev-master"
+    }
+```
 
 You can install this plugin into your CakePHP application using [composer](https://getcomposer.org).
 
