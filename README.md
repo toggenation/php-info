@@ -62,24 +62,7 @@ In template:
 ```
 
 ## Installation
-This package is NOT published on https://packagist.org/
-
-You need to add to add the following `repositories` property to your `composer.json` and run `composer update`.
-
-Or just add the `repositories` section and run composer require `toggenation/php-info:dev-master`
-
-```json
-  "license": "MIT",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/toggenation/php-info"
-        }
-    ],
-    "require": {
-         "toggenation/php-info": "dev-master"
-    }
-```
+This package is published on https://packagist.org/ 
 
 You can install this plugin into your CakePHP application using [composer](https://getcomposer.org).
 
@@ -88,3 +71,25 @@ The recommended way to install composer packages is:
 ```sh
 composer require toggenation/php-info
 ```
+
+## If you fork it and want to use your forked repo
+
+You need to add to add the following `repositories` property to your `composer.json` and run `composer update`.
+
+Or just add the `repositories` section and run composer require `your-git-hub-user-name/php-info:dev-master`
+
+```json
+  "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/your-git-hub-user-name/php-info"
+        }
+    ],
+    "require": {
+         "toggenation/php-info": "dev-master"
+    }
+```
+
+## Tests
+None yet. To be added
