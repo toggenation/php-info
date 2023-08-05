@@ -1,6 +1,6 @@
 {
     "name": "toggenation/php-info",
-    "description": "PhpInfo plugin for CakePHP",
+    "description": "Embeds phpinfo() output in CakePHP views",
     "type": "cakephp-plugin",
     "license": "MIT",
     "require": {

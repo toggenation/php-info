@@ -1,6 +1,6 @@
 # PhpInfo plugin for CakePHP
 
-Embeds the output of `phpinfo()` into a cake view.
+Embeds the output of `phpinfo()` into a cake view using a custom Helper.
 
 ## Usage
 
@@ -24,6 +24,8 @@ $this->Html->css('PhpInfo.styles', ['block' => 'css']);
 
 ```
 ## VSCode Type Hinting
+
+Requires VSCode to have the `bmewburn.vscode-intelephense-client` extension from https://intelephense.com/
 
 ```php
 // in src/View/AppView.php
@@ -50,9 +52,8 @@ In template:
  */
 ```
 
-
 ## Installation
-This package is not published on https://packagist.org/
+This package is NOT published on https://packagist.org/
 
 You need to add to add the following `repositories` property to your `composer.json` and run `composer update`.
 
