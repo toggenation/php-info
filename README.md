@@ -4,7 +4,7 @@ Embeds the output of `phpinfo()` into a cake view using a custom Helper.
 
 ## Usage
 
-After making sure the PhpInfo module is loaded
+After making sure the `PhpInfo` Plugin is loaded
 
 ```php
 // in a view template
@@ -23,6 +23,15 @@ $this->Html->css('PhpInfo.styles', ['block' => 'css']);
 <?= $this->Info->display(); ?>
 
 ```
+### As an element
+
+Use the element to pull in all of the above in one command
+
+```php
+// pulls in src/templates/element/php-info.php
+<?= $this->element('PhpInfo.php-info');
+```
+
 ## VSCode Type Hinting
 
 Requires VSCode to have the `bmewburn.vscode-intelephense-client` extension from https://intelephense.com/

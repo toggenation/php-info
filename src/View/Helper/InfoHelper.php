@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace PhpInfo\View\Helper;
@@ -20,7 +21,10 @@ class InfoHelper extends Helper
     public function display()
     {
         ob_start();
-        phpinfo(INFO_LICENSE | INFO_CREDITS);
+        // to limit output use the INFO_ constants
+        // and a `|' e.g.:
+        // INFO_LICENSE | INFO_CREDITS
+        phpinfo();
         $phpinfo = ob_get_contents();
         ob_end_clean();
 
