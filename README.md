@@ -69,7 +69,7 @@ You can install this plugin into your CakePHP application using [composer](https
 The recommended way to install composer packages is:
 
 ```sh
-composer require toggenation/php-info
+composer require toggenation/php-info:dev-master
 ```
 
 ## If you fork it and want to use your forked repo
